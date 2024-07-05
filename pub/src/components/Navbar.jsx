@@ -35,7 +35,7 @@ export default function Navbar() {
             Newest Products
           </Link>
           <Link as={ReactRouterLink} to="?page[number]=2" fontSize={20}>
-            halaman 2
+            2
           </Link>
         </Flex>
       </Box>
