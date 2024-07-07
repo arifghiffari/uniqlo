@@ -7,7 +7,7 @@ import Login from "../views/Login";
 import SimpleSidebar from "../components/SideBar";
 import NewProduct from "../views/NewProduct";
 import ProductEdit from "../views/ProductEdit";
-import EditImage from "../views/editImage";
+import ImageUpload from "../views/ImageUpload";
 
 // const toast = useToast();
 const url = "https://server.gc1-arifghiffari.online";
@@ -57,7 +57,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/edit-image/:id",
-    element: <EditImage url={url} />,
+    element: <ImageUpload url={url} />,
   },
 ]);
 

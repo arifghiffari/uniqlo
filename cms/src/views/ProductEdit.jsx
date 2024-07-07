@@ -10,9 +10,11 @@ export default function ProductEdit({ url }) {
   const navigate = useNavigate();
   const { id } = useParams();
   const toast = useToast();
+  const [loading, setLoading] = useState(false);
 
   async function fetchProducts() {
     try {
+      setLoading(true);
       let serverUrl = `${url}/products/${id}`;
 
       const { data } = await axios.get(serverUrl, {
@@ -28,6 +30,8 @@ export default function ProductEdit({ url }) {
         duration: 9000,
         isClosable: true,
       });
+    } finally {
+      setLoading(false);
     }
   }
 

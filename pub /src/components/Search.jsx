@@ -1,7 +1,7 @@
 import { Center, Input, InputGroup, InputRightElement } from "@chakra-ui/react";
 import { Search2Icon } from "@chakra-ui/icons";
 
-export default function Search() {
+export default function Search({ hanldeSearch }) {
   return (
     <>
       <Center>
@@ -9,7 +9,7 @@ export default function Search() {
           <InputRightElement pointerEvents="none">
             <Search2Icon />
           </InputRightElement>
-          <Input type="tel" placeholder="Search" color="#1b1b1b" />
+          <Input type="tel" placeholder="Search" color="#1b1b1b" onChange={hanldeSearch} />
         </InputGroup>
       </Center>
     </>

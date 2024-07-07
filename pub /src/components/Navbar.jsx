@@ -32,10 +32,10 @@ export default function Navbar() {
           </Link>
           <Spacer />
           <Link as={ReactRouterLink} to="?sort=ASC" fontSize={20}>
-            Newest Products
+            Asc
           </Link>
-          <Link as={ReactRouterLink} to="?page[number]=2" fontSize={20}>
-            2
+          <Link as={ReactRouterLink} to="?sort=Desc" fontSize={20}>
+            desc
           </Link>
         </Flex>
       </Box>

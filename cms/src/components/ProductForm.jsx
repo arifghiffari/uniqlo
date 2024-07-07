@@ -54,9 +54,6 @@ export default function ProductForm({ url, handleSubmit, product, isEdit }) {
           <Heading fontSize={"4xl"} textAlign={"center"}>
             Product Form
           </Heading>
-          <Text fontSize={"lg"} color={"gray.600"}>
-            to enjoy all of our cool features ✌️
-          </Text>
         </Stack>
         <Box rounded={"lg"} minW={"100vh"} bg={useColorModeValue("white", "gray.700")} boxShadow={"lg"} p={8}>
           <form onSubmit={(e) => handleSubmit(e, { ...editProduct })}>
